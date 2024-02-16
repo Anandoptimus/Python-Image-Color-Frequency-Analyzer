@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top Colors</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='css/style.css')}}">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Top 10 Most Frequent Colors</h1>
+        <div class="color-list">
+            {% for i in range(0, 10): %}
+                <div class="color-message">
+                    <span class="color-name">Color: {{ list[i] }}</span>
+                    <span class="frequency">Frequency: {{ list[i+1] }}</span>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+</body>
+
+</html>

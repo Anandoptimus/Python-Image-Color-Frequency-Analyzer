@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Upload</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='css/styles.css')}}">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Image Upload</h1>
+        <form id="uploadForm" enctype="multipart/form-data" action="/upload" method="post">
+            <label for="image">Select Image:</label>
+            <input type="file" id="image" name="image" accept="image/*" required>
+            <button type="submit">Upload</button>
+        </form>
+
+        {%if n==1%}
+            <h2>Top 10 Most frequent colors: </h2>
+            {%for i in range(0, a_list|length, 2): %}
+
+                    <div id="message">Color: {{a_list[i]}}, Frequency: {{a_list[i+1]}}</div>
+            {%endfor%}
+        {%endif%}
+    </div>
+</body>
+
+</html>
