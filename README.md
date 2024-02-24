@@ -15,7 +15,7 @@ This web application allows users to upload an image and analyzes the frequency 
 1. **Clone the repository:**
 
     ```bash
-    git clone https://github.com/Anandoptimus/Day92.git
+    git clone https://github.com/Anandoptimus/Python-Image-Color-Frequency-Analyzer.git
     ```
 
 2. **Install the required dependencies:**
@@ -29,7 +29,7 @@ This web application allows users to upload an image and analyzes the frequency 
 1. **Navigate to the project directory:**
 
     ```bash
-    cd Day92
+    cd Python-Image-Color-Frequency-Analyzer
     ```
 
 2. **Run the Flask application:**
